@@ -1,7 +1,9 @@
 ## What?
 
-This is a quick test project that uses NGL (https://github.com/arose/ngl) with the changes to module building proposed in 
-https://github.com/arose/ngl/issues/737
+This is a quick demo of using NGL (https://github.com/nglviewer/ngl) as a node module, building a simple page
+using rollup.
+
+It provides a simple page with a single embedded view of a protein.
 
 ## What to do?
 
@@ -15,27 +17,13 @@ npm install
 # Build
 npm run build
 
-# Serve the files
+# Serve the files, e.g. with python
 python -m http.server 8080
 ```
 
-Click here: (http://localhost:8080/index.html)
+Click here: (http://localhost:8080/index.html) - or wherever else you're hosting it
 
-## So what?
+## What now?
 
-You can then inspect the files and see that:
-
-  1. three was brought in by npm
-  2. The built version (dist/index.js) contains NGL and three
-
-
-## What I haven't tried
-
-  * Yarn
-  * Making a meaningful export from this package and consuming it somewhere else (in which case make ngl a normal dependency and build an es6 module)
-
-## What I haven't thought enough about:
-
-  * What to name the different build targets in ngl/dist
-
+Anything you want - this is just some very minimal boilerplate!
 
